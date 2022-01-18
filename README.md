@@ -1,3 +1,19 @@
+CMake build for jq 1.6
+======================
+
+Tested under:
+
+-   Ubuntu 16.04, 18.04, 20.04, `x86_64`
+-   BlackBerry QNX, qcc 5.4, `aarch64`
+-   Windows, `x86_64` (using <https://github.com/dockcross/dockcross#dockcrosswindows-static-x64>)
+-   Nvidia Orin, `aarch64`
+
+You can get prebuilt binaries from <https://github.com/district10/jq-cmake/releases/tag/jq-1.6-cmake>.
+
+No warranty.
+
+---
+
 jq
 ==
 
