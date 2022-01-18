@@ -7,6 +7,9 @@
 # define _XPG6
 # define __EXTENSIONS__
 #endif
+#if __QNX__
+#undef _XOPEN_SOURCE
+#endif
 #include <sys/time.h>
 #include <stdlib.h>
 #include <stddef.h>

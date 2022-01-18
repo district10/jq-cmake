@@ -17,7 +17,7 @@ jq
 jq.1
 
 # Generated source
-src/builtin.inc
+!src/builtin.inc
 
 # Autotools junk
 .libs
@@ -30,12 +30,12 @@ config.log
 config.status
 autom4te.cache
 INSTALL
-Makefile
+!Makefile
 jq-*.tar.gz
 configure
 aclocal.m4
 Makefile.in
-version.h
+!version.h
 .remake-version-h
 config.cache
 *.rpm
@@ -49,3 +49,4 @@ tests/*.trs
 cscope.in.out
 cscope.out
 cscope.po.out
+build

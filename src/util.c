@@ -45,7 +45,8 @@ void *alloca (size_t);
 #include "jq.h"
 #include "jv_alloc.h"
 
-#ifdef WIN32
+// #ifdef WIN32
+#if 0
 FILE *fopen(const char *fname, const char *mode) {
   size_t sz = sizeof(wchar_t) * MultiByteToWideChar(CP_UTF8, 0, fname, -1, NULL, 0);
   wchar_t *wfname = alloca(sz + 2); // +2 is not needed, but just in case
