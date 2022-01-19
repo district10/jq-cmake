@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(jqcore)
+project(jq)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE TRUE)
@@ -63,7 +63,13 @@ if(BUILD_EXAMPLES)
                     ""
                     exe
                     ${src})
-        add_executable(${exe} ${src})
+        if(exe STREQUAL "jq")
+            set(exe jq_exe)
+            add_executable(${exe} ${src})
+            set_target_properties(${exe} PROPERTIES OUTPUT_NAME jq)
+        else()
+            add_executable(${exe} ${src})
+        endif()
         target_link_libraries(
             ${exe}
             ${PROJECT_NAME}
